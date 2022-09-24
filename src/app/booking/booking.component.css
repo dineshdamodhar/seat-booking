@@ -1,0 +1,44 @@
+.booking-container {
+    display: grid;
+    place-items: center;
+
+}
+.seat-container {
+    display: grid;
+    place-items:  center;
+    grid-template-columns: repeat(10, 10%);
+
+}
+.screen {
+    width: 50%;
+    height: 10px;
+    background-color: grey;
+}
+.screen-text {
+    text-align: center;
+}
+.seat {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+}
+.available {
+    background-color: darkgray;
+    cursor: pointer;
+}
+.selected {
+    background-color: rgba(40, 167, 69);
+    color: #ffff;
+}
+.booked {
+    background-color: rgba(5, 119, 226, 0.934);
+    pointer-events: none;
+    color: #ffff;
+}
+.space {
+    margin-left: 20px;
+}
+.book-btn {
+    margin-left: auto;
+}

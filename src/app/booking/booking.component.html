@@ -1,0 +1,12 @@
+<div class="booking-container mt-5">
+    <div class="screen"></div>
+    <h3 class="screen-text">Your Screen is Here</h3>
+    <div class="seat-container">
+        <ng-container *ngFor="let seat of seatData">
+            <div (click)="addSeat(seat)" class="seat" [ngClass]="{'available':seat.isAvailable === true, 'selected':seat.isSelected === true, 'booked':seat.isAvailable === false}">
+                {{seat.seatNumber}}
+            </div>
+        </ng-container>
+    </div>
+    <div class="d-flex justify-content-end mt-3"><button [disabled]="!isSeatSelected" type="button" aria-disabled="true" class="btn btn-primary" (click)="addTickets()">Add Tickets</button></div>
+</div>
